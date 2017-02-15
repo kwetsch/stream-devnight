@@ -1,0 +1,6 @@
+{
+    "require": {
+        "illuminate/support": "^5.2",
+        "raveren/kint": "^1.0"
+    }
+}
