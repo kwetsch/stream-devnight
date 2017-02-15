@@ -1,7 +1,6 @@
 <?php
 
 	require_once("vendor/autoload.php");
-	include_once("controller/member.php");
 
 	// init api call
 	$ch = curl_init();
