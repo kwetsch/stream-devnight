@@ -1,0 +1,6 @@
+{
+	"secret": "mySecret",
+	"url": "https://api.github.com/orgs/dev-night/repos",
+	"this_file": "this/index.html",
+	"last_file": "last/index.html"
+}
