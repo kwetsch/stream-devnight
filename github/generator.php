@@ -1,13 +1,19 @@
 <?php
-	/*
-	 * This script gets the current and last event from the github API
-	 * and writes the urls as a HTML redirect file.
-	 */
-	require_once("vendor/autoload.php");
+/*
+ * This script gets the current and last event from the github API
+ * and writes the urls as a HTML redirect file.
+ */
+require_once("vendor/autoload.php");
 
-	$config = json_decode(file_get_contents("config.json"));
-
-	if($_POST['payload'] || $_GET['action'] == $config->secret) {
+/**
+ * Generates the files.
+ *
+ * @param $payload
+ * @param $action
+ * @param $config
+ */
+function generateFiles($payload, $action, $config){
+	if($payload || $action == $config->secret) {
 		// gets the result of the api call
 		$request = queryURL($config->url);
 
@@ -32,6 +38,7 @@
 		d($now['html_url']);
 		d($last['html_url']);
 	}
+}
 
 /**
  * Writes a file in $path which redirects to the given $url.
