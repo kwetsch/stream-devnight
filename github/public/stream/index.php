@@ -11,4 +11,4 @@ function Redirect($url, $permanent = false)
 }
 
 // Redirect('https://www.youtube.com/channel/UClfO4eoUUYEYOHtQuDY4hQg', false);
-Redirect('https://www.youtube.com/watch?v=yOsuZJoZoc4', false);
+Redirect('https://www.youtube.com/watch?v=i2mZO5XJq6w', false);
